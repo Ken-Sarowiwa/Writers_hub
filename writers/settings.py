@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "rest_framework",
+    "api",
+
 ]
 
 MIDDLEWARE = [
@@ -59,7 +62,7 @@ ROOT_URLCONF = 'writers.urls'
 
 REST_FRAMEWORK ={
     "DEFAULT_AUTHENTICATION_CLASSES":[
-        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadonly",
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
 
