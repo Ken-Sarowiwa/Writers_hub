@@ -61,7 +61,7 @@ ROOT_URLCONF = 'writers.urls'
 #rest_frameworrk
 
 REST_FRAMEWORK ={
-    "DEFAULT_AUTHENTICATION_CLASSES":[
+    "DEFAULT_PERMISSION_CLASSES":[
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
