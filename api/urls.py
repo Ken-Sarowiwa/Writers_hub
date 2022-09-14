@@ -10,7 +10,7 @@ router.register(r"users", views.UserViewSet)
 router.register(r"articles", views.ArticlesViewSet)
 router.register(r"profiles", views.ProfileViewSet)
 
-url patterns = [
+urlpatterns = [
     path("" , include(router.urls)),
     path("api/articles", ArticlesViewSet.as_view({"get": "list"})),
     path("api/profiles", ProfileViewSet.as_view({"get": "list"})),
