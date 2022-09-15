@@ -14,6 +14,9 @@ class Profile(models.Model):
     bio = models.TextField()
     date_of_birth = models.DateField()
 
+    def __str__(self):
+        return self.name
+
 
 class Articles(models.Model):
     title = models.CharField(max_length=100)
@@ -25,3 +28,6 @@ class Articles(models.Model):
     comment = models.TextField()
     # share a post to social media
     share = models.IntegerField()
+
+    def __str__(self):
+        return self.name
